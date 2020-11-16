@@ -1,0 +1,7 @@
+(library
+ (public_name messages_json_js)
+ (name messages_json_js)
+ (libraries gen_js_api js_of_ocaml messages_common)
+ (preprocess (pps js_of_ocaml-ppx))
+ (modes byte)
+)

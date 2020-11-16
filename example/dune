@@ -1,0 +1,4 @@
+(executables
+ (names example custom abstract)
+ (libraries messages_json)
+ )
