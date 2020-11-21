@@ -1,4 +1,4 @@
-include Messages_common.T
+include Messages.T
 
 type int = Stdlib.Int.t
 type string = Stdlib.String.t

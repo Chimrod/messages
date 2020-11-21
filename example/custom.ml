@@ -2,7 +2,7 @@
    Type definition
 *)
 module type Custom = sig
-  include Messages_common.S
+  include Messages.S
 
   val array: ('a, 'b) app -> ('a array, 'b array) app
 end
@@ -41,7 +41,7 @@ end
 module Custom(T:Custom) = struct
   open T
   let content
-    : ([`Prices] float_atom array, float array) app
+    : ([`Prices] float_atom array, _) app
     = array
       (float_atom `Prices)
 end

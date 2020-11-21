@@ -1,5 +1,5 @@
 (library
  (public_name messages_json)
  (name messages_json)
- (libraries ezjsonm messages_common)
+ (libraries ezjsonm messages)
  )

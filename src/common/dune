@@ -1,4 +1,4 @@
 (library
- (public_name messages_common)
- (name messages_common)
+ (public_name messages)
+ (name messages)
  )

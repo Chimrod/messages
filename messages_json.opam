@@ -10,7 +10,7 @@ bug-reports: "https://github.com/Chimrod/messages/issues"
 depends: [
   "dune" {>= "2.5"}
   "ocaml" {>= "4.08.0"}
-  "messages_common" {>= "0.0.1"}
+  "messages" {>= "0.0.1"}
   "ezjsonm" {>= "1.2.0"}
 ]
 build: [

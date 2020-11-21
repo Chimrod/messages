@@ -6,7 +6,7 @@ val process: Ezjsonm.t -> 'a t
 
 (** {2. Encoder implementation } *)
 
-include Messages_common.S
+include Messages.S
   with type ('a, 'b) app = 'a t -> 'b
    and type 'a t := 'a t
    and type string = string

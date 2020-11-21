@@ -26,7 +26,7 @@ Simple example
   (* Declare the message.
 
   The message is a pair of a numeric id, and a text value *)
-  module Content(T:Messages_common.S) = struct
+  module Content(T:Messages.S) = struct
 
     open T
     let content
@@ -115,7 +115,7 @@ First you have to declare the new signature :
 .. code-block:: ocaml
 
   module type Custom = sig
-    include Messages_common.S
+    include Messages.S
 
     val array: ('a, 'b) app -> ('a array, 'b array) app
   end
@@ -174,11 +174,11 @@ The type value **cannot** be used inside the message signature :
 .. code-block:: ocaml
 
   (* Error: The type of this module,
-       functor (T : Messages_common.S) ->
+       functor (T : Messages.S) ->
          sig val content : ([ `Value ] T.atom, '_weak1 T.t) T.app end,
        contains type variables that cannot be generalized
   *)
-  module ContentValue(T:Messages_common.S) = struct
+  module ContentValue(T:Messages.S) = struct
 
     open T
     let content
@@ -192,7 +192,7 @@ create (or extract) the type directly :
 
 .. code-block:: ocaml
 
-  module ContentValue(T:Messages_common.S) = struct
+  module ContentValue(T:Messages.S) = struct
 
     open T
     let content

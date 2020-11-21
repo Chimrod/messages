@@ -11,7 +11,7 @@
 (bug_reports "https://github.com/Chimrod/messages/issues")
 
 (package
-  (name messages_common)
+  (name messages)
   (synopsis "Json encoding and decoding")
   (depends
     (ocaml (>= 4.08.0))
@@ -23,7 +23,7 @@
   (synopsis "Json encoding and decoding")
   (depends
     (ocaml (>= 4.08.0))
-    (messages_common (>= 0.0.1))
+    (messages (>= 0.0.1))
     (ezjsonm (>= 1.2.0))
   )
 )
@@ -33,7 +33,7 @@
   (synopsis "Json encoding and decoding")
   (depends
     (ocaml (>= 4.08.0))
-    (messages_common (>= 0.0.1))
+    (messages (>= 0.0.1))
     (gen_js_api (>= 1.0.6))
     (js_of_ocaml (>= 3.8.0))
     (js_of_ocaml-ppx (>= 3.8.0))

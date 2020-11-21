@@ -1,11 +1,11 @@
 (* Declare the message.
 
    The message is a pair of a numeric id, and a text value *)
-module Content(T:Messages_common.S) = struct
+module Content(T:Messages.S) = struct
 
   open T
   let content
-    : ([`Id] int_atom * [`Value] str_atom, 'a) app
+    : ([`Id] int_atom * [`Value] str_atom, _) app
     = pair
       (int_atom `Id)
       (str_atom `Value)

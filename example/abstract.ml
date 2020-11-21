@@ -1,8 +1,8 @@
-module Abstract(T:Messages_common.S) = struct
+module Abstract(T:Messages.S) = struct
 
   open T
   let content
-    : ([`Value] atom, 'a) app
+    : ([`Value] atom, _) app
     = inject
 
 end

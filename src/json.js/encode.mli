@@ -6,7 +6,7 @@ val process: 'a t -> Js_of_ocaml.Js.js_string Js_of_ocaml.Js.t
 
 (** {2. Encoder implementation } *)
 
-include Messages_common.S
+include Messages.S
   with type ('a, 'b) app = 'b -> 'a t
    and type 'a t := 'a t
    and type string = Stdlib.String.t
